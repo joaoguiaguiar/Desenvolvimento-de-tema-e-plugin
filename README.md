@@ -1,4 +1,4 @@
-# Site do Museus Castro Maia – Desenvolvimento de Tema e Plugin Personalizado
+# Site Museus Castro Maia – Desenvolvimento de Tema e Plugin Personalizado
 
 ## Sobre este projeto
 
