@@ -27,7 +27,7 @@ Arquivos do core do WordPress, configurações de servidor e banco de dados **n�
 
 ## 🌐 Site em produção
 
-[.         ](https://museuscastromaya.museus.gov.br/)
+[https://museuscastromaya.museus.gov.br/](https://museuscastromaya.museus.gov.br/)
 
 ## 💬 Observações
 
