@@ -1,4 +1,4 @@
-# Projeto: Site IBRAM - Museu Castro Maia
+# Site do Museu Castro Maia – Desenvolvimento de Tema e Plugin Personalizado
 
 ## Sobre este projeto
 
