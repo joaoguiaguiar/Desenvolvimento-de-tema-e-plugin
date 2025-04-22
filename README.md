@@ -12,7 +12,6 @@ Este repositório contém os arquivos de desenvolvimento personalizados do site 
 - Plugins auxiliares:
   - Tainacan
   - Ajax Search
-  - Blocksy Configurator
   - PostX
   - Smart Slider 3
 
