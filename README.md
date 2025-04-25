@@ -1,10 +1,10 @@
-Desenvolvimento de Tema Personalizado
+## Desenvolvimento de Tema Personalizado
 
-Sobre este projeto
+# Sobre este projeto
 
 Este repositório contém os arquivos de desenvolvimento personalizados do site do Museus Castro Maia, criado como parte do meu trabalho como desenvolvedor no IBRAM (Instituto Brasileiro de Museus).
 
-Tema Filho Customizado
+## Tema Filho Customizado
 
 O projeto teve como principal objetivo a criação de um tema-filho baseado no tema Bloxy, permitindo personalizações visuais e funcionais diretamente integradas ao painel administrativo do WordPress. Essa abordagem facilita a manutenção por parte dos gestores de conteúdo, sem a necessidade de intervenção técnica.
 
