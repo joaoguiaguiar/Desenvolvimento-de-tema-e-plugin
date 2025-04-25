@@ -2,7 +2,7 @@
 
 ## Sobre este projeto
 
-Este repositório contém os arquivos de desenvolvimento personalizados do site do Museus Castro Maia, criado como parte do meu trabalho como desenvolvedor no IBRAM (Instituto Brasileiro de Museus).
+Este repositório contém os arquivos de desenvolvimento personalizados do site do Museus Castro Maia, criado como parte do meu trabalho como desenvolvedor no IBRAM.
 
 ## Tema Filho Customizado
 
