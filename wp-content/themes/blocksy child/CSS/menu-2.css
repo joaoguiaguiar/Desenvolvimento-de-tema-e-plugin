@@ -9,6 +9,9 @@
     width: 100%;
 }
 
+.titulo__menu:hover {
+  text-decoration: underline !important;
+}
 
 
 .containner__p {
