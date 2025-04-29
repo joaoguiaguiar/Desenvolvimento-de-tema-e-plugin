@@ -17,6 +17,9 @@
     justify-content: space-between;
 }
 
+.titulo__menu:hover {
+  text-decoration: underline !important;
+}
 
 
 .menu-1 .menu__items {
