@@ -30,51 +30,53 @@ get_header();
             </h3>
         </div>
 
-        <div class="menu-and-search">
+        <div class="menu-1">
+            <div class="menu-and-search">
+                
+                <!-- Ícone do menu mobile -->
+                <span class="material-symbols-outlined" onclick="toggleMenu()">menu</span>
 
-            <!-- Ícone do menu mobile -->
-            <span class="material-symbols-outlined" onclick="toggleMenu()">menu</span>
+                <!-- Navegação principal -->
+                <nav class="menu__items">
+                    <?php
+                    $menu_items = wp_get_nav_menu_items('menu-principal');
 
-            <!-- Navegação principal -->
-            <nav class="menu__items">
-                <?php
-                $menu_items = wp_get_nav_menu_items('menu-principal');
+                    if ($menu_items) {
+                        $menu_nav = array_slice($menu_items, 0, 7);
 
-                if ($menu_items) {
-                    $menu_nav = array_slice($menu_items, 0, 7);
-
-                    foreach ($menu_nav as $item) {
-                        echo '<a href="' . esc_url($item->url) . '">' . esc_html($item->title) . '</a>';
+                        foreach ($menu_nav as $item) {
+                            echo '<a href="' . esc_url($item->url) . '">' . esc_html($item->title) . '</a>';
+                        }
                     }
-                }
-                ?>
-            </nav>
+                    ?>
+                </nav>
 
-            <!-- Lista dinâmica via widget -->
-            <div class="container__lista">
-                <div class="containerflex">
-                    <?php 
-                    if (is_active_sidebar('main-menu-sidebar')) {
-                        dynamic_sidebar('main-menu-sidebar'); 
-                    } else {
-                        echo '<ul class="lista_item_menu" style="display:flex; justify-content: space-evenly">';
-                        echo '<li class="item__menu"><h5>Menu</h5>';
-                        echo '<p>Adicione o widget "Menu Lista" na área de widgets do menu principal.</p>';
-                        echo '</li></ul>';
-                    }
-                    ?>    
+                <!-- Campo de busca -->
+                <div class="container__input">
+                    <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
                 </div>
-            </div>
 
-            <!-- Campo de busca -->
-            <div class="container__input">
-                <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
-            </div>
+                <!-- Lista dinâmica via widget -->
+                <div class="container__lista">
+                    <div class="containerflex">
+                        <?php 
+                        if (is_active_sidebar('main-menu-sidebar')) {
+                            dynamic_sidebar('main-menu-sidebar'); 
+                        } else {
+                            echo '<ul class="lista_item_menu" style="display:flex; justify-content: space-evenly">';
+                            echo '<li class="item__menu"><h5>Menu</h5>';
+                            echo '<p>Adicione o widget "Menu Lista" na área de widgets do menu principal.</p>';
+                            echo '</li></ul>';
+                        }
+                        ?>    
+                    </div>
+                </div>
 
+            </div>
         </div>
+
     </section>
 
-    <!-- Conteúdo da página (caso não tenha front-page Elementor) -->
     <?php
     if (
         ! function_exists('elementor_theme_do_location') ||
@@ -95,3 +97,4 @@ get_header();
 </main>
 
 <?php get_footer(); ?>
+
