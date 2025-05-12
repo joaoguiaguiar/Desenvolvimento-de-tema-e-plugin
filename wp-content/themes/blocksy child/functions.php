@@ -289,7 +289,7 @@ function mi_customizer_css() {
 }
 add_action('wp_head', 'mi_customizer_css', 999);
 
-// Adicionar esta função
+
 function mi_customizer_save_after($wp_customize) {
     // Forçar atualização ao salvar configurações
     set_transient('mi_customizer_updated', time(), DAY_IN_SECONDS);
