@@ -58,19 +58,14 @@ get_header(); // Cabeçalho padrão
 </section>
 
 <!-- Conteúdo Principal da Página -->
-<main id="mi-conteudo-principal" class="mi-conteudo-principal">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <article id="mi-post-<?php the_ID(); ?>" <?php post_class('mi-post'); ?>>
-            <header class="mi-cabecalho-post">
-                <?php the_title('<h1 class="mi-titulo-post">', '</h1>'); ?>
-            </header>
-            <div class="mi-conteudo-post">
-                <?php the_content(); ?>
-            </div>
-        </article>
-    <?php endwhile; else : ?>
-        <p>Nenhum conteúdo encontrado.</p>
-    <?php endif; ?>
-</main>
+<?php
+if (
+    ! function_exists('elementor_theme_do_location') ||
+    ! elementor_theme_do_location('single')
+) {
+    get_template_part('template-parts/single');
+}
+?>
+
 
 <?php get_footer(); ?>
