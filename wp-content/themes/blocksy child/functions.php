@@ -182,7 +182,6 @@ function mi_check_css_files() {
     $css_files = array(
         'menu.css' => '/* Estilos para o menu principal */',
         'menu-2.css' => '/* Estilos para menus secundários */',
-        'menu-mobile.css' => '/* Estilos para o menu em dispositivos móveis */'
     );
     
     // Verificar e criar cada arquivo
