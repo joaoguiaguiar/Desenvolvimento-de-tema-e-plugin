@@ -143,7 +143,6 @@ function mi_get_home_url() {
 }
 
 // Adicionar script inline para garantir que as funções JavaScript existam
-// Adicionar à função mi_add_inline_scripts no arquivo functions.php
 function mi_add_inline_scripts() {
     ?>
     <script>
@@ -168,7 +167,7 @@ function mi_add_inline_scripts() {
     <?php
 }
 
-// Função para verificar se os arquivos CSS existem e criá-los se não existirem
+// Função para verificar se os arquivos CSS existem
 function mi_check_css_files() {
     // Diretório dos arquivos CSS
     $css_dir = get_stylesheet_directory() . '/css';
@@ -303,7 +302,6 @@ function mi_debug_enqueued_scripts() {
 }
 add_action('wp_head', 'mi_debug_enqueued_scripts');
 
-// Adicione isso no seu tema
 function mi_clear_theme_cache() {
     // Limpar qualquer cache que possa estar afetando
     delete_transient('mi_customizer_updated');
@@ -326,13 +324,13 @@ function mi_customizer_live_preview() {
         'mi-customizer-preview',
         get_stylesheet_directory_uri() . '/js/customizer.js',
         array('jquery', 'customize-preview'),
-        time(), // Use time() para evitar cache durante o desenvolvimento
+        time(), 
         true
     );
 }
 add_action('customize_preview_init', 'mi_customizer_live_preview');
 
-// Função para verificar se os arquivos JavaScript existem e criá-los se não existirem
+// Função para verificar se os arquivos JavaScript existem 
 function mi_check_js_files() {
     // Diretório dos arquivos JS
     $js_dir = get_stylesheet_directory() . '/js';
@@ -651,7 +649,7 @@ function custom_menu_widget_style($items, $args) {
 add_filter('wp_nav_menu_items', 'custom_menu_widget_style', 10, 2);
 
 
-// --------------------------------
+
 
 // Função helper para renderizar o conteúdo do widget de menu
 function mi_get_menu_widget_content() {
