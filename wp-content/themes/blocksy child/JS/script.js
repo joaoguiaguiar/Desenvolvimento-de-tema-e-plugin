@@ -3,8 +3,8 @@ function toggleMenu() {
     lista.classList.toggle('active'); // Alterna a classe 'active'
 }
 
-// Seleciona o botão (ajuste o seletor conforme o seu HTML)
-const menuButton = document.querySelector('#menu-toggle'); // Exemplo de seletor para o botão
+// Seleciona o botão 
+const menuButton = document.querySelector('#menu-toggle');
 
 // Adiciona o evento de clique ao botão
 menuButton.addEventListener('click', toggleMenu);
